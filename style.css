@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.task-form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 35px;
+  color: #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.5s ease-out;
+}
+
+.task-form input,
+.task-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.task-form input:focus,
+.task-form textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-2px);
+}
+
+.task-form textarea {
+  height: 110px;
+  resize: none;
+}
+
+.task-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.task-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.task-form button:active {
+  transform: translateY(0);
+}
+
+.task-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.task-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.6s ease-out;
+}
+
+.task-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.3em;
+  color: #333;
+  font-weight: 600;
+}
+
+.task-list {
+  display: flex;
+  flex-directi#f8f9fa;
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.task-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #333;
+  font-weight: 600;
+}
+
+.task-card p {
+  margin-bottom: 10px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.task-time {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 12px;
+  margin-top: 8px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.task-actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.complete-btn {
+  background: linear-gradient(135deg, #42a5f5 0%, #1e88e5 100%);
+}
+
+.complete-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 136, 229, 0.3);
+}
+
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .task-form {
+    padding: 20px;
+  }
+  
+  .task-card {
+    padding: 15px;
+  }
+  
+  .task-actions button {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+.edit-btn {
+  background: linear-gradient(135deg, #ffa726 0%, #f57c00 100%);
+  color: white !important;
+}
+
+.edit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 124, 0, 0.3);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ef5350 0%, #c62828 100%);
+}
+
+.delete-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(198, 40, 40, 0.3);
+}
+
+.pending-label {
+  color: #ff9800;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 4px 8px;
+  background: #fff3e0;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.completed-label {
+  color: #2e7d32;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 4px 8px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.completed-label {
+  color: green;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .task-sections {
+    grid-template-columns: 1fr;
+  }
+}
