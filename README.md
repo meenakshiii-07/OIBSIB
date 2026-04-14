@@ -4,24 +4,23 @@ A modern, responsive task management web application built with vanilla JavaScri
 
 ## Features
 
-✨ **Modern Design**
+ **Modern Design**
 - Beautiful gradient background and smooth animations
 - Responsive layout that works on desktop and mobile devices
 - Professional color scheme with purple gradient theme
 
-📝 **Task Management**
+ **Task Management**
 - Create tasks with title and description
 - Mark tasks as complete
 - Edit existing tasks
 - Delete tasks
 - Automatic task categorization (Pending/Completed)
 
-💾 **Data Persistence**
+**Data Persistence**
 - Tasks are saved to browser's localStorage
 - Data persists across browser sessions
 - No server required
-
-🎯 **User Experience**
+ **User Experience**
 - Smooth transitions and hover effects
 - Keyboard support (Enter to move between fields, Ctrl+Enter to submit)
 - Clear visual feedback for all interactions
